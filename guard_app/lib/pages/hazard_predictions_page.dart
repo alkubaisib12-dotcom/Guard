@@ -59,13 +59,13 @@ class HazardPredictionsPage extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         itemCount: hazards.length,
         itemBuilder: (context, index) {
-          return _buildHazardCard(hazards[index]);
+          return _buildHazardCard(context, hazards[index]);
         },
       ),
     );
   }
 
-  Widget _buildHazardCard(HazardPrediction hazard) {
+  Widget _buildHazardCard(BuildContext context, HazardPrediction hazard) {
     Color statusColor;
     IconData statusIcon;
 

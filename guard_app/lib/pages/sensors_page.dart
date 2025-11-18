@@ -79,13 +79,13 @@ class SensorsPage extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         itemCount: sensors.length,
         itemBuilder: (context, index) {
-          return _buildSensorCard(sensors[index]);
+          return _buildSensorCard(context, sensors[index]);
         },
       ),
     );
   }
 
-  Widget _buildSensorCard(Sensor sensor) {
+  Widget _buildSensorCard(BuildContext context, Sensor sensor) {
     Color statusColor;
     IconData statusIcon;
 
@@ -257,7 +257,7 @@ class SensorsPage extends StatelessWidget {
   void _showFilterDialog(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (dialogContext) => AlertDialog(
         backgroundColor: const Color(0xFF1A1A1A),
         title: const Text(
           'Filter Sensors',
@@ -266,15 +266,15 @@ class SensorsPage extends StatelessWidget {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _buildFilterOption('All Sensors'),
-            _buildFilterOption('Warnings Only'),
-            _buildFilterOption('Active Only'),
-            _buildFilterOption('Safe Only'),
+            _buildFilterOption(dialogContext, 'All Sensors'),
+            _buildFilterOption(dialogContext, 'Warnings Only'),
+            _buildFilterOption(dialogContext, 'Active Only'),
+            _buildFilterOption(dialogContext, 'Safe Only'),
           ],
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(context),
+            onPressed: () => Navigator.pop(dialogContext),
             child: const Text('Close'),
           ),
         ],
@@ -282,7 +282,7 @@ class SensorsPage extends StatelessWidget {
     );
   }
 
-  Widget _buildFilterOption(String label) {
+  Widget _buildFilterOption(BuildContext context, String label) {
     return ListTile(
       title: Text(label, style: const TextStyle(color: Colors.white)),
       onTap: () {

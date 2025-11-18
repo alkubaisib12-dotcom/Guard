@@ -132,7 +132,7 @@ class HouseMapPage extends StatelessWidget {
               padding: const EdgeInsets.all(15),
               itemCount: rooms.length,
               itemBuilder: (context, index) {
-                return _buildRoomCard(rooms[index]);
+                return _buildRoomCard(context, rooms[index]);
               },
             ),
           ),
@@ -175,7 +175,7 @@ class HouseMapPage extends StatelessWidget {
     );
   }
 
-  Widget _buildRoomCard(Room room) {
+  Widget _buildRoomCard(BuildContext context, Room room) {
     IconData roomIcon;
     switch (room.name) {
       case 'Living Room':
