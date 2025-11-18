@@ -1,11 +1,56 @@
 import 'package:flutter/material.dart';
+import 'services/storage_service.dart';
+import 'pages/onboarding_page.dart';
+import 'pages/login_page.dart';
 import 'pages/dashboard_page.dart';
 import 'pages/cameras_page.dart';
 import 'pages/sensors_page.dart';
 import 'pages/insights_page.dart';
 
-void main() {
-  runApp(const GuardApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await StorageService.init();
+  runApp(const GuardAppRoot());
+}
+
+class GuardAppRoot extends StatelessWidget {
+  const GuardAppRoot({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Guard',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: const Color(0xFF0A0A0A),
+        cardTheme: const CardThemeData(
+          color: Color(0xFF1A1A1A),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(15)),
+          ),
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF0A0A0A),
+          elevation: 0,
+        ),
+      ),
+      home: _getInitialPage(),
+    );
+  }
+
+  Widget _getInitialPage() {
+    final isFirstLaunch = StorageService.getBool('isFirstLaunch', defaultValue: true);
+
+    if (isFirstLaunch) {
+      StorageService.setBool('isFirstLaunch', false);
+      return const OnboardingPage();
+    }
+
+    final isLoggedIn = StorageService.isLoggedIn();
+    return isLoggedIn ? const GuardApp() : const LoginPage();
+  }
 }
 
 class GuardApp extends StatelessWidget {

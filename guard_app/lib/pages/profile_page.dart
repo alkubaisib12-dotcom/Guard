@@ -1,7 +1,46 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import '../services/storage_service.dart';
+import 'edit_profile_page.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
+
+  @override
+  State<ProfilePage> createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  String _userName = '';
+  String _userEmail = '';
+  String _homeType = '';
+  String _location = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _loadProfile();
+  }
+
+  void _loadProfile() {
+    setState(() {
+      _userName = StorageService.getUserName();
+      _userEmail = StorageService.getUserEmail();
+      _homeType = StorageService.getString('homeType', defaultValue: 'Apartment');
+      _location = StorageService.getString('location', defaultValue: 'Dubai, UAE');
+    });
+  }
+
+  Future<void> _navigateToEdit() async {
+    final result = await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const EditProfilePage()),
+    );
+
+    if (result == true) {
+      _loadProfile();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +56,7 @@ class ProfilePage extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.edit, color: Color(0xFF0A84FF)),
-            onPressed: () {},
+            onPressed: _navigateToEdit,
           ),
         ],
       ),
@@ -36,9 +75,9 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            const Text(
-              'Ahmed',
-              style: TextStyle(
+            Text(
+              _userName,
+              style: const TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -46,7 +85,7 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 5),
             Text(
-              'ahmed@example.com',
+              _userEmail,
               style: TextStyle(
                 fontSize: 14,
                 color: Colors.grey[400],
@@ -97,11 +136,15 @@ class ProfilePage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    _buildInfoRow(Icons.home_work, 'Home Type', 'Apartment'),
+                    _buildInfoRow(Icons.home_work, 'Home Type', _homeType),
                     const Divider(height: 30),
-                    _buildInfoRow(Icons.location_on, 'Location', 'Dubai, UAE'),
+                    _buildInfoRow(Icons.location_on, 'Location', _location),
                     const Divider(height: 30),
-                    _buildInfoRow(Icons.calendar_today, 'Member Since', 'January 2024'),
+                    _buildInfoRow(
+                      Icons.calendar_today,
+                      'Member Since',
+                      DateFormat('MMMM yyyy').format(DateTime.now()),
+                    ),
                     const Divider(height: 30),
                     _buildInfoRow(Icons.security, 'Risk Level', 'Low', color: Colors.green),
                   ],
@@ -144,7 +187,7 @@ class ProfilePage extends StatelessWidget {
                     _buildHealthRow('Smart Devices', '12/12', 1.0, Colors.green),
                     const SizedBox(height: 20),
                     Text(
-                      'Last system check: Today, 10:15 AM',
+                      'Last system check: Today, ${DateFormat('HH:mm').format(DateTime.now())}',
                       style: TextStyle(
                         fontSize: 12,
                         color: Colors.grey[400],
@@ -157,7 +200,7 @@ class ProfilePage extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // Subscription Card (Optional)
+            // Subscription Card
             Card(
               color: const Color(0xFF0A84FF).withOpacity(0.1),
               child: Padding(

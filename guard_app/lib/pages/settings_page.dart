@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import '../services/storage_service.dart';
 import 'automations_page.dart';
+import 'login_page.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -13,6 +15,59 @@ class _SettingsPageState extends State<SettingsPage> {
   bool autoActions = true;
   bool childSafetyMode = true;
   bool nightMode = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSettings();
+  }
+
+  void _loadSettings() {
+    setState(() {
+      hazardNotifications = StorageService.getBool('hazardNotifications', defaultValue: true);
+      autoActions = StorageService.getBool('autoActions', defaultValue: true);
+      childSafetyMode = StorageService.getBool('childSafetyMode', defaultValue: true);
+      nightMode = StorageService.getBool('nightMode', defaultValue: false);
+    });
+  }
+
+  Future<void> _logout() async {
+    final confirm = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1A1A1A),
+        title: const Text(
+          'Logout',
+          style: TextStyle(color: Colors.white),
+        ),
+        content: const Text(
+          'Are you sure you want to logout?',
+          style: TextStyle(color: Colors.white70),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(context, true),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+            child: const Text('Logout'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirm == true && mounted) {
+      await StorageService.logout();
+      if (mounted) {
+        Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (context) => const LoginPage()),
+          (route) => false,
+        );
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -57,6 +112,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     setState(() {
                       hazardNotifications = value;
                     });
+                    StorageService.setBool('hazardNotifications', value);
                   },
                 ),
                 const Divider(height: 1),
@@ -75,6 +131,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     setState(() {
                       autoActions = value;
                     });
+                    StorageService.setBool('autoActions', value);
                   },
                 ),
                 const Divider(height: 1),
@@ -93,6 +150,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     setState(() {
                       childSafetyMode = value;
                     });
+                    StorageService.setBool('childSafetyMode', value);
                   },
                 ),
                 const Divider(height: 1),
@@ -111,6 +169,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     setState(() {
                       nightMode = value;
                     });
+                    StorageService.setBool('nightMode', value);
                   },
                 ),
               ],
@@ -252,7 +311,7 @@ class _SettingsPageState extends State<SettingsPage> {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton.icon(
-              onPressed: () {},
+              onPressed: _logout,
               icon: const Icon(Icons.logout),
               label: const Text('Logout'),
               style: ElevatedButton.styleFrom(
