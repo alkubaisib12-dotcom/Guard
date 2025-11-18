@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuardPrototype.SetupPage"
+             Title="System Setup">
+
+    <!-- Gradient Background -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#000000" Offset="0.0"/>
+            <GradientStop Color="#0A84FF" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+
+            <!-- Room Information -->
+            <Label Text="Room Information"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,10,0,10"/>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="RoomName"
+                       Placeholder="Room name"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="TotalSmartPlugs"
+                       Placeholder="Total smart plugs"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       Keyboard="Numeric"/>
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="TotalDevices"
+                       Placeholder="Total devices"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       Keyboard="Numeric"/>
+            </Frame>
+
+            <!-- Camera Setup -->
+            <Label Text="Camera Setup"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,20,0,10"/>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="Camera_username"
+                       Placeholder="Camera username"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="Cameras_Password"
+                       Placeholder="Camera password"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       IsPassword="True"/>
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="Cameras_IPaddress"
+                       Placeholder="Camera IP address"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <!-- Air Sensor -->
+            <Label Text="Air Sensor Setup"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,20,0,10"/>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="AirSensor_APIKey"
+                       Placeholder="Air Sensor API Key"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <!-- Shelly Devices -->
+            <Label Text="Shelly Devices"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,20,0,10"/>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="ShellyPMMini_DeviceIP"
+                       Placeholder="Shelly PM Mini IP address"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="Shellyflood_DeviceIP"
+                       Placeholder="Shelly Flood IP address"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <!-- IR Blaster -->
+            <Label Text="IR Blaster Integration"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,20,0,10"/>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="TotalDevicesBlaster"
+                       Placeholder="Total devices integrated with blaster"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       Keyboard="Numeric"/>
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Editor x:Name="Devices"
+                        Placeholder="Device names/IDs (comma-separated)"
+                        PlaceholderColor="#9AA0A6"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        AutoSize="TextChanges"/>
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="LocationInTheRoom"
+                       Placeholder="Device location in room"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <!-- Smart Plug -->
+            <Label Text="Smart Plug Details"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,20,0,10"/>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="SmartPlugDeviceId"
+                       Placeholder="Smart plug device ID"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A">
+                <Entry x:Name="SmartPlugRegion"
+                       Placeholder="Smart plug region (us/eu/cn)"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"/>
+            </Frame>
+
+            <!-- Save Button -->
+            <Button Text="Save Setup"
+                    BackgroundColor="#0A84FF"
+                    TextColor="White"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    Clicked="OnSaveClicked"
+                    HeightRequest="50"
+                    Shadow="5"
+                    Margin="0,30,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

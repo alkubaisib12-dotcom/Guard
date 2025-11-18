@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuardPrototype.MainPage">
+
+    <!-- Gradient Background -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#000000" Offset="0.0"/>
+            <!-- Black -->
+            <GradientStop Color="#0A84FF" Offset="1.0"/>
+            <!-- Futuristic Blue -->
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="CenterAndExpand">
+ 
+            <!-- Logo -->
+            <Image Source="logo.png" 
+                   HeightRequest="120" 
+                   WidthRequest="120"
+                   HorizontalOptions="Center"/>
+
+            <!-- Title -->
+            <Label Text="Guard App Login"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
+
+            <!-- Username Field -->
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A" Margin="0,0,0,10">
+                <Entry x:Name="UsernameEntry"
+                       Placeholder="Username"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       ClearButtonVisibility="WhileEditing"
+                       Keyboard="Text"/>
+            </Frame>
+
+            <!-- Password Field -->
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A" Margin="0,0,0,20">
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="Password"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       IsPassword="True"
+                       ClearButtonVisibility="WhileEditing"/>
+            </Frame>
+
+            <!-- Login Button -->
+            <Button Text="Login"
+                    x:Name="LoginButton"
+                    BackgroundColor="#0A84FF"
+                    TextColor="White"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    Clicked="OnLoginClicked"
+                    HeightRequest="50">
+                <Button.Shadow>
+                    <Shadow Brush="Black"
+                            Offset="5,5"
+                            Radius="5"
+                            Opacity="0.4" />
+                </Button.Shadow>
+            </Button>
+
+            <!-- Extra Options -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20" Margin="0,20,0,0">
+                <Button Text="Forgot Password?" 
+                        FontSize="12"
+                        TextColor="#0A84FF"
+                        BackgroundColor="Transparent"
+                        Clicked="OnForgotPasswordClicked"/>
+                <Button Text="Create New Account"
+                        FontSize="12"
+                        TextColor="#0A84FF"
+                        BackgroundColor="Transparent"
+                        Clicked="OnCreateAccountClicked"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

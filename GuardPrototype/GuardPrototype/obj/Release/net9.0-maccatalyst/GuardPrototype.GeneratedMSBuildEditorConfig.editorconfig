@@ -1,0 +1,99 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-maccatalyst
+build_property.TargetFramework = net9.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GuardPrototype
+build_property.ProjectDir = C:\Users\Mariam\Desktop\GP-gaurd app\GuardPrototype\GuardPrototype\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/CreateAccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.CreateAccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CreateAccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CreateAccountPage.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DashboardPage.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/ForgotPasswordPage - Copy.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.ForgotPasswordPage - Copy.xaml
+build_metadata.AdditionalFiles.TargetPath = ForgotPasswordPage - Copy.xaml
+build_metadata.AdditionalFiles.RelativePath = ForgotPasswordPage - Copy.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/GuidePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.GuidePage.xaml
+build_metadata.AdditionalFiles.TargetPath = GuidePage.xaml
+build_metadata.AdditionalFiles.RelativePath = GuidePage.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/IRSetupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.IRSetupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = IRSetupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = IRSetupPage.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/RecommendationsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.RecommendationsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RecommendationsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RecommendationsPage.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Mariam/Desktop/GP-gaurd app/GuardPrototype/GuardPrototype/SetupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuardPrototype.SetupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SetupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SetupPage.xaml

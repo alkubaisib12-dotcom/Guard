@@ -1,0 +1,504 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\models\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\models\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\systemsetupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\systemsetupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\setupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\setupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\smartplugscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\smartplugscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\smartplugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\smartplugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\models\\guardsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\models\\guardsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\iirblasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\iirblasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\irblasterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\irblasterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\guarddbcallsapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\guarddbcallsapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\guarddbcallsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\guarddbcallsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\models\\recommendationslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\models\\recommendationslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\hazardlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\hazardlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\hazardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\hazardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\recomendationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\recomendationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\recomendationsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\recomendationsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\models\\smartplug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\models\\smartplug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\models\\irblaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\models\\irblaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|c:\\users\\mariam\\desktop\\gp-gaurd app\\guarddbcallsapi\\guarddbcallsapi\\models\\hazardlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{880DCA50-D470-4FB9-8AC3-91EFF3083055}|GuardDBcallsAPI\\GuardDBcallsAPI.csproj|solutionrelative:guarddbcallsapi\\models\\hazardlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SetupController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\SetupController.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\SetupController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\SetupController.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\SetupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:36:41.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SystemSetupService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\SystemSetupService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\SystemSetupService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\SystemSetupService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\SystemSetupService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwDsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:35:05.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAzwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T17:57:59.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\DTOs.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Models\\DTOs.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\DTOs.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Models\\DTOs.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAA4wBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T17:42:17.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\appsettings.json",
+              "RelativeToolTip": "GuardDBcallsAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-14T17:37:57.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Program.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T17:20:43.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SmartPlugService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\SmartPlugService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\SmartPlugService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\SmartPlugService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\SmartPlugService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T18:49:40.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\UserService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\UserService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\UserService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\UserService.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAwIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T17:54:50.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SmartPlugsController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\SmartPlugsController.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\SmartPlugsController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\SmartPlugsController.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\SmartPlugsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBQwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T18:51:45.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GuardSystemContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\GuardSystemContext.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Models\\GuardSystemContext.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\GuardSystemContext.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Models\\GuardSystemContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T17:20:22.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\RoomService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\RoomService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\RoomService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\RoomService.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAUwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T18:36:56.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Models\\Room.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\Room.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T18:05:57.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IrblastersController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\IrblastersController.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\IrblastersController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\IrblastersController.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\IrblastersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:05:06.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IIrblasterService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\IIrblasterService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\IIrblasterService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\IIrblasterService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\IIrblasterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:00:48.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DashBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\DashBoardController.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\DashBoardController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\DashBoardController.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\DashBoardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:40:32.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GuardDBcallsAPI",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\GuardDBcallsAPI.csproj",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\GuardDBcallsAPI.csproj",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\GuardDBcallsAPI.csproj",
+              "RelativeToolTip": "GuardDBcallsAPI\\GuardDBcallsAPI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-07T08:04:56.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DashBoardService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\DashBoardService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\DashBoardService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\DashBoardService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\DashBoardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:39:02.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GuardDBcallsAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\GuardDBcallsAPI.csproj",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\GuardDBcallsAPI.csproj",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\GuardDBcallsAPI.csproj",
+              "RelativeToolTip": "GuardDBcallsAPI\\GuardDBcallsAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-14T17:31:55.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RecommendationsLog.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\RecommendationsLog.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Models\\RecommendationsLog.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\RecommendationsLog.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Models\\RecommendationsLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T14:06:56.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\JwtService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\JwtService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\JwtService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T17:39:31.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HazardLogService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\HazardLogService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\HazardLogService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\HazardLogService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\HazardLogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:24:27.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HazardsController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\HazardsController.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\HazardsController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\HazardsController.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\HazardsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:25:59.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RecomendationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\RecomendationsController.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\RecomendationsController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\RecomendationsController.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\RecomendationsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:31:15.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RecomendationsService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\RecomendationsService.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\RecomendationsService.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\RecomendationsService.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\RecomendationsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:30:00.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDkAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T18:38:31.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GuardDBcallsAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T07:34:55.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\User.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T17:42:53.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SmartPlug.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\SmartPlug.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Models\\SmartPlug.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\SmartPlug.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Models\\SmartPlug.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T18:44:35.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Irblaster.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\Irblaster.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Models\\Irblaster.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\Irblaster.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Models\\Irblaster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T14:06:15.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HazardLog.cs",
+              "DocumentMoniker": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\HazardLog.cs",
+              "RelativeDocumentMoniker": "GuardDBcallsAPI\\Models\\HazardLog.cs",
+              "ToolTip": "C:\\Users\\Mariam\\Desktop\\GP-gaurd app\\GuardDBcallsAPI\\GuardDBcallsAPI\\Models\\HazardLog.cs",
+              "RelativeToolTip": "GuardDBcallsAPI\\Models\\HazardLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:22:36.715Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

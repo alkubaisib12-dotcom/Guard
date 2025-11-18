@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuardPrototype.RecommendationsPage"
+             Title="Recommendations"
+             >
+
+    <!-- Gradient Background -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#000000" Offset="0.0"/>
+            <!-- Black -->
+            <GradientStop Color="#0A84FF" Offset="1.0"/>
+            <!-- Futuristic Blue -->
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout x:Name="RecommendationsLayout"
+                             Padding="20"
+                             Spacing="20">
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

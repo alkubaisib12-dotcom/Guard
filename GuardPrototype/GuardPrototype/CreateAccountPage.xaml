@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuardPrototype.CreateAccountPage"
+             Title="Create Account"
+             >
+
+    <!-- Gradient Background -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#000000" Offset="0.0"/>
+            <!-- Black -->
+            <GradientStop Color="#0A84FF" Offset="1.0"/>
+            <!-- Futuristic Blue -->
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="CenterAndExpand">
+
+            <!-- Title -->
+            <Label Text="Create a New Account"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
+
+            <!-- Username -->
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A" Margin="0,0,0,10">
+                <Entry x:Name="UsernameEntry"
+                       Placeholder="Username"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       ClearButtonVisibility="WhileEditing"
+                       Keyboard="Text"/>
+            </Frame>
+
+            <!-- Password -->
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A" Margin="0,0,0,10">
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="Password"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       IsPassword="True"
+                       ClearButtonVisibility="WhileEditing"/>
+            </Frame>
+
+            <!-- Total Rooms -->
+            <Frame CornerRadius="12" Padding="10" BackgroundColor="#1A1A1A" Margin="0,0,0,20">
+                <Entry x:Name="TotalRoomsEntry"
+                       Placeholder="Total Rooms to Guard"
+                       PlaceholderColor="#9AA0A6"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       Keyboard="Numeric"
+                       ClearButtonVisibility="WhileEditing"/>
+            </Frame>
+
+            <!-- Register Button -->
+            <Button Text="Register"
+                    BackgroundColor="#0A84FF"
+                    TextColor="White"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    Clicked="OnRegisterClicked"
+                    HeightRequest="50"
+                    Shadow="5"/>
+
+            <!-- Back to Login Button -->
+            <Button Text="Back to Login"
+                    BackgroundColor="Transparent"
+                    TextColor="#0A84FF"
+                    FontAttributes="Bold"
+                    Clicked="OnBackClicked"
+                    HeightRequest="40"
+                    Margin="0,15,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
