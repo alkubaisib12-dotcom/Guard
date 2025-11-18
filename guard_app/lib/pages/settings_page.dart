@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../services/storage_service.dart';
 import 'automations_page.dart';
 import 'login_page.dart';
+import 'profile_page.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -202,7 +203,13 @@ class _SettingsPageState extends State<SettingsPage> {
                     style: TextStyle(color: Colors.grey[400], fontSize: 12),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios, color: Colors.grey[600], size: 18),
-                  onTap: () {},
+                  onTap: () {
+                    _showInfoDialog(
+                      context,
+                      'Sensor Calibration',
+                      'Here you can adjust the sensitivity levels of your sensors:\n\n• Motion sensors: Detection range\n• Air quality: Threshold levels\n• Water leak: Moisture sensitivity\n• Current sensors: Overload limits',
+                    );
+                  },
                 ),
                 const Divider(height: 1),
                 ListTile(
@@ -216,7 +223,13 @@ class _SettingsPageState extends State<SettingsPage> {
                     style: TextStyle(color: Colors.grey[400], fontSize: 12),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios, color: Colors.grey[600], size: 18),
-                  onTap: () {},
+                  onTap: () {
+                    _showInfoDialog(
+                      context,
+                      'Manage Devices',
+                      'Connected Devices:\n\n• 5 IP Cameras\n• 3 Smart Plugs\n• 2 Shelly Sensors\n• 1 IR Blaster\n\nTap "+ Add Device" to connect new smart home devices to Guard.',
+                    );
+                  },
                 ),
                 const Divider(height: 1),
                 ListTile(
@@ -265,7 +278,13 @@ class _SettingsPageState extends State<SettingsPage> {
                     style: TextStyle(color: Colors.white),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios, color: Colors.grey[600], size: 18),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const ProfilePage()),
+                    );
+                  },
                 ),
                 const Divider(height: 1),
                 ListTile(
@@ -275,7 +294,13 @@ class _SettingsPageState extends State<SettingsPage> {
                     style: TextStyle(color: Colors.white),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios, color: Colors.grey[600], size: 18),
-                  onTap: () {},
+                  onTap: () {
+                    _showInfoDialog(
+                      context,
+                      'Privacy & Security',
+                      'Your privacy is important:\n\n✓ Camera feeds are encrypted\n✓ Data stored locally\n✓ No third-party sharing\n✓ Two-factor authentication available\n✓ Activity logs protected\n\nAll sensor data is processed on-device using AI.',
+                    );
+                  },
                 ),
                 const Divider(height: 1),
                 ListTile(
@@ -285,7 +310,13 @@ class _SettingsPageState extends State<SettingsPage> {
                     style: TextStyle(color: Colors.white),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios, color: Colors.grey[600], size: 18),
-                  onTap: () {},
+                  onTap: () {
+                    _showInfoDialog(
+                      context,
+                      'Help & Support',
+                      'Need help?\n\n📧 Email: support@guard.ai\n📞 Phone: +971-4-123-4567\n💬 Live Chat: Available 24/7\n📚 FAQ: guard.ai/help\n\nOur team is here to assist you with:\n• Setup & installation\n• Troubleshooting\n• Device configuration\n• Billing questions',
+                    );
+                  },
                 ),
                 const Divider(height: 1),
                 ListTile(
@@ -299,7 +330,13 @@ class _SettingsPageState extends State<SettingsPage> {
                     style: TextStyle(color: Colors.grey[400], fontSize: 12),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios, color: Colors.grey[600], size: 18),
-                  onTap: () {},
+                  onTap: () {
+                    _showInfoDialog(
+                      context,
+                      'About Guard',
+                      'Guard v1.0.0\n\nAI-Powered Home Safety System\n\n© 2024 Guard Technologies\nAll rights reserved.\n\nGuard uses advanced AI and computer vision to predict and prevent home hazards before they occur.\n\nProactive protection for modern homes.',
+                    );
+                  },
                 ),
               ],
             ),
@@ -323,6 +360,29 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ),
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showInfoDialog(BuildContext context, String title, String message) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1A1A1A),
+        title: Text(
+          title,
+          style: const TextStyle(color: Color(0xFF0A84FF)),
+        ),
+        content: Text(
+          message,
+          style: const TextStyle(color: Colors.white),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('OK'),
           ),
         ],
       ),

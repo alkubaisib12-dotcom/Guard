@@ -71,7 +71,33 @@ class ActivityLogPage extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.filter_list, color: Color(0xFF0A84FF)),
-            onPressed: () {},
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  backgroundColor: const Color(0xFF1A1A1A),
+                  title: const Text(
+                    'Filter Activity Log',
+                    style: TextStyle(color: Color(0xFF0A84FF)),
+                  ),
+                  content: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      _buildFilterOption(context, 'All Activities'),
+                      _buildFilterOption(context, 'Alerts Only'),
+                      _buildFilterOption(context, 'Warnings Only'),
+                      _buildFilterOption(context, 'Info Only'),
+                    ],
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () => Navigator.pop(context),
+                      child: const Text('Close'),
+                    ),
+                  ],
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -195,6 +221,22 @@ class ActivityLogPage extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+
+  Widget _buildFilterOption(BuildContext context, String label) {
+    return ListTile(
+      title: Text(label, style: const TextStyle(color: Colors.white)),
+      onTap: () {
+        Navigator.pop(context);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Filter applied: $label'),
+            backgroundColor: const Color(0xFF0A84FF),
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      },
     );
   }
 }

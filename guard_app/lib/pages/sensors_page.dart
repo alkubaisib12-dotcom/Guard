@@ -206,7 +206,49 @@ class SensorsPage extends StatelessWidget {
         ),
         trailing: IconButton(
           icon: Icon(Icons.more_vert, color: Colors.grey[600]),
-          onPressed: () {},
+          onPressed: () {
+            showModalBottomSheet(
+              context: context,
+              backgroundColor: const Color(0xFF1A1A1A),
+              builder: (context) => SafeArea(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    ListTile(
+                      leading: const Icon(Icons.info, color: Color(0xFF0A84FF)),
+                      title: const Text('View Details', style: TextStyle(color: Colors.white)),
+                      onTap: () {
+                        Navigator.pop(context);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('Sensor details coming soon')),
+                        );
+                      },
+                    ),
+                    ListTile(
+                      leading: const Icon(Icons.edit, color: Color(0xFF0A84FF)),
+                      title: const Text('Edit Sensor', style: TextStyle(color: Colors.white)),
+                      onTap: () {
+                        Navigator.pop(context);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('Edit sensor coming soon')),
+                        );
+                      },
+                    ),
+                    ListTile(
+                      leading: const Icon(Icons.delete, color: Colors.red),
+                      title: const Text('Remove Sensor', style: TextStyle(color: Colors.white)),
+                      onTap: () {
+                        Navigator.pop(context);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('Remove sensor coming soon')),
+                        );
+                      },
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
         ),
       ),
     );
@@ -243,7 +285,16 @@ class SensorsPage extends StatelessWidget {
   Widget _buildFilterOption(String label) {
     return ListTile(
       title: Text(label, style: const TextStyle(color: Colors.white)),
-      onTap: () {},
+      onTap: () {
+        Navigator.pop(context);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Filter applied: $label'),
+            backgroundColor: const Color(0xFF0A84FF),
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      },
     );
   }
 }

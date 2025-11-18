@@ -63,7 +63,15 @@ class HouseMapPage extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh, color: Color(0xFF0A84FF)),
-            onPressed: () {},
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Refreshing room status...'),
+                  backgroundColor: Color(0xFF0A84FF),
+                  duration: Duration(seconds: 2),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -254,7 +262,76 @@ class HouseMapPage extends StatelessWidget {
           color: Colors.grey[600],
           size: 18,
         ),
-        onTap: () {},
+        onTap: () {
+          showDialog(
+            context: context,
+            builder: (context) => AlertDialog(
+              backgroundColor: const Color(0xFF1A1A1A),
+              title: Text(
+                room.name,
+                style: TextStyle(color: room.statusColor),
+              ),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.info, color: room.statusColor, size: 20),
+                      const SizedBox(width: 10),
+                      Text(
+                        'Status: ${room.status}',
+                        style: TextStyle(
+                          color: room.statusColor,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 15),
+                  Text(
+                    room.statusText,
+                    style: const TextStyle(color: Colors.white),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Connected Devices:',
+                    style: TextStyle(
+                      color: Color(0xFF0A84FF),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  const Text(
+                    '• Camera: Active\n• Motion Sensor: Online\n• Smart Plug: Connected',
+                    style: TextStyle(color: Colors.white70, height: 1.5),
+                  ),
+                ],
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: const Text('Close'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Managing room settings...'),
+                        backgroundColor: Color(0xFF0A84FF),
+                      ),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF0A84FF),
+                  ),
+                  child: const Text('Manage'),
+                ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
