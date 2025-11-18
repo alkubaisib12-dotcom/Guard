@@ -59,8 +59,22 @@ flutter pub get
 ```
 
 3. Run the app:
+
+**For Web:**
+```bash
+flutter run -d web-server
+# Or for Chrome
+flutter run -d chrome
+```
+
+**For Mobile (Android/iOS):**
 ```bash
 flutter run
+```
+
+**For Desktop (Windows):**
+```bash
+flutter run -d windows
 ```
 
 ## Current Status
@@ -74,6 +88,15 @@ This is a **prototype with dummy data**. All sensors, cameras, and hazards are s
 - Add WebSocket for real-time updates
 - Implement user authentication
 - Add camera streaming
+
+## Supported Platforms
+
+- ✅ Web (Chrome, Firefox, Safari, Edge)
+- ✅ Android
+- ✅ iOS
+- ✅ Windows
+- ✅ macOS
+- ✅ Linux
 
 ## Project Structure
 
@@ -101,6 +124,10 @@ guard_app/
 │       ├── profile_page.dart
 │       ├── automations_page.dart
 │       └── insights_page.dart
+├── web/                       # Web platform files
+│   ├── index.html
+│   ├── manifest.json
+│   └── icons/
 └── pubspec.yaml
 ```
 
