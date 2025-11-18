@@ -20,26 +20,6 @@ class DashboardPage extends StatelessWidget {
             color: Color(0xFF0A84FF),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings, color: Color(0xFF0A84FF)),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const SettingsPage()),
-              );
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.person, color: Color(0xFF0A84FF)),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ProfilePage()),
-              );
-            },
-          ),
-        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),

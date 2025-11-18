@@ -3,9 +3,8 @@ import 'services/storage_service.dart';
 import 'pages/onboarding_page.dart';
 import 'pages/login_page.dart';
 import 'pages/dashboard_page.dart';
-import 'pages/cameras_page.dart';
-import 'pages/sensors_page.dart';
-import 'pages/insights_page.dart';
+import 'pages/settings_page.dart';
+import 'pages/profile_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -93,9 +92,8 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _pages = [
     const DashboardPage(),
-    const CamerasPage(),
-    const SensorsPage(),
-    const InsightsPage(),
+    const SettingsPage(),
+    const ProfilePage(),
   ];
 
   @override
@@ -139,16 +137,12 @@ class _MainScreenState extends State<MainScreen> {
               label: 'Dashboard',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.videocam),
-              label: 'Cameras',
+              icon: Icon(Icons.settings),
+              label: 'Settings',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.sensors),
-              label: 'Sensors',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.insights),
-              label: 'Insights',
+              icon: Icon(Icons.person),
+              label: 'Profile',
             ),
           ],
         ),
