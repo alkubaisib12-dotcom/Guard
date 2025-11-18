@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 
-class RecommendationsPage extends StatelessWidget {
+class RecommendationsPage extends StatefulWidget {
   const RecommendationsPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final recommendations = [
+  State<RecommendationsPage> createState() => _RecommendationsPageState();
+}
+
+class _RecommendationsPageState extends State<RecommendationsPage> {
+  late List<Map<String, dynamic>> recommendations;
+
+  @override
+  void initState() {
+    super.initState();
+    recommendations = [
       {
         'title': 'Install a smoke detector in the kitchen',
         'description':
@@ -49,7 +57,10 @@ class RecommendationsPage extends StatelessWidget {
         'icon': Icons.air,
       },
     ];
+  }
 
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -60,17 +71,47 @@ class RecommendationsPage extends StatelessWidget {
           ),
         ),
       ),
-      body: ListView.builder(
-        padding: const EdgeInsets.all(15),
-        itemCount: recommendations.length,
-        itemBuilder: (context, index) {
-          return _buildRecommendationCard(recommendations[index]);
-        },
-      ),
+      body: recommendations.isEmpty
+          ? Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.check_circle,
+                    size: 80,
+                    color: Colors.green.withOpacity(0.5),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'All caught up!',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    'No new recommendations at this time',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey[400],
+                    ),
+                  ),
+                ],
+              ),
+            )
+          : ListView.builder(
+              padding: const EdgeInsets.all(15),
+              itemCount: recommendations.length,
+              itemBuilder: (context, index) {
+                return _buildRecommendationCard(recommendations[index], index);
+              },
+            ),
     );
   }
 
-  Widget _buildRecommendationCard(Map<String, dynamic> recommendation) {
+  Widget _buildRecommendationCard(Map<String, dynamic> recommendation, int index) {
     Color priorityColor;
     switch (recommendation['priority']) {
       case 'High':
@@ -159,12 +200,58 @@ class RecommendationsPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      recommendations.removeAt(index);
+                    });
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Recommendation dismissed'),
+                        duration: Duration(seconds: 2),
+                      ),
+                    );
+                  },
                   child: const Text('Dismiss'),
                 ),
                 const SizedBox(width: 10),
                 ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        backgroundColor: const Color(0xFF1A1A1A),
+                        title: const Text(
+                          'Shop for Products',
+                          style: TextStyle(color: Color(0xFF0A84FF)),
+                        ),
+                        content: Text(
+                          'Looking for: ${recommendation['title']}\n\nWe\'ll redirect you to our partner store where you can find:\n\n• Top-rated products\n• Guard-compatible devices\n• Professional installation\n• Warranty included',
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.pop(context),
+                            child: const Text('Cancel'),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text('Opening store...'),
+                                  backgroundColor: Color(0xFF0A84FF),
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFF0A84FF),
+                            ),
+                            child: const Text('Continue'),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
                   icon: const Icon(Icons.shopping_cart, size: 18),
                   label: const Text('Shop Now'),
                   style: ElevatedButton.styleFrom(

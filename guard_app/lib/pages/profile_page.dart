@@ -249,7 +249,43 @@ class _ProfilePageState extends State<ProfilePage> {
                     SizedBox(
                       width: double.infinity,
                       child: OutlinedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          showDialog(
+                            context: context,
+                            builder: (context) => AlertDialog(
+                              backgroundColor: const Color(0xFF1A1A1A),
+                              title: const Text(
+                                'Manage Subscription',
+                                style: TextStyle(color: Color(0xFF0A84FF)),
+                              ),
+                              content: const Text(
+                                'Premium Plan - Active\n\n✓ Unlimited sensors\n✓ AI hazard detection\n✓ Real-time alerts\n✓ Cloud storage (50GB)\n✓ Priority support\n\nNext billing: Dec 31, 2024\n\$19.99/month',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              actions: [
+                                TextButton(
+                                  onPressed: () => Navigator.pop(context),
+                                  child: const Text('Close'),
+                                ),
+                                ElevatedButton(
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(
+                                        content: Text('Subscription management coming soon'),
+                                        backgroundColor: Color(0xFF0A84FF),
+                                      ),
+                                    );
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: const Color(0xFF0A84FF),
+                                  ),
+                                  child: const Text('Upgrade'),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
                         style: OutlinedButton.styleFrom(
                           foregroundColor: const Color(0xFF0A84FF),
                           side: const BorderSide(color: Color(0xFF0A84FF)),

@@ -231,7 +231,9 @@ class _AutomationsPageState extends State<AutomationsPage> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 TextButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    _showEditDialog(automation);
+                  },
                   icon: const Icon(Icons.edit, size: 16),
                   label: const Text('Edit'),
                   style: TextButton.styleFrom(
@@ -282,6 +284,64 @@ class _AutomationsPageState extends State<AutomationsPage> {
               backgroundColor: const Color(0xFF0A84FF),
             ),
             child: const Text('Create'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showEditDialog(Automation automation) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1A1A1A),
+        title: const Text(
+          'Edit Automation',
+          style: TextStyle(color: Color(0xFF0A84FF)),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              automation.title,
+              style: const TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+            const SizedBox(height: 15),
+            Text(
+              automation.description,
+              style: const TextStyle(color: Colors.white70, height: 1.4),
+            ),
+            const SizedBox(height: 20),
+            const Text(
+              'Configure triggers, conditions, and actions for this automation rule.',
+              style: TextStyle(color: Color(0xFF0A84FF)),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Automation settings updated'),
+                  backgroundColor: Color(0xFF0A84FF),
+                ),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFF0A84FF),
+            ),
+            child: const Text('Save Changes'),
           ),
         ],
       ),

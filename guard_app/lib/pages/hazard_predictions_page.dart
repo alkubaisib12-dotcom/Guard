@@ -59,13 +59,13 @@ class HazardPredictionsPage extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         itemCount: hazards.length,
         itemBuilder: (context, index) {
-          return _buildHazardCard(hazards[index]);
+          return _buildHazardCard(context, hazards[index]);
         },
       ),
     );
   }
 
-  Widget _buildHazardCard(HazardPrediction hazard) {
+  Widget _buildHazardCard(BuildContext context, HazardPrediction hazard) {
     Color statusColor;
     IconData statusIcon;
 
@@ -241,7 +241,73 @@ class HazardPredictionsPage extends StatelessWidget {
                 if (hazard.status == 'Awaiting confirmation' ||
                     hazard.status == 'Attention needed')
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          backgroundColor: const Color(0xFF1A1A1A),
+                          title: const Text(
+                            'Hazard Details',
+                            style: TextStyle(color: Color(0xFF0A84FF)),
+                          ),
+                          content: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                hazard.title,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              const SizedBox(height: 15),
+                              Text(
+                                'Detected: ${DateTime.now().subtract(const Duration(minutes: 5)).hour}:${DateTime.now().subtract(const Duration(minutes: 5)).minute}',
+                                style: TextStyle(color: Colors.grey[400]),
+                              ),
+                              const SizedBox(height: 10),
+                              Text(
+                                'Confidence: ${hazard.confidence}',
+                                style: const TextStyle(color: Color(0xFF0A84FF)),
+                              ),
+                              const SizedBox(height: 10),
+                              Text(
+                                'Action: ${hazard.action}',
+                                style: const TextStyle(color: Colors.white70),
+                              ),
+                              const SizedBox(height: 15),
+                              const Text(
+                                'Location: Living Room\nCamera: Front Cam',
+                                style: TextStyle(color: Colors.white70, height: 1.5),
+                              ),
+                            ],
+                          ),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(context),
+                              child: const Text('Close'),
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(
+                                    content: Text('Hazard confirmed and resolved'),
+                                    backgroundColor: Colors.green,
+                                  ),
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.green,
+                              ),
+                              child: const Text('Confirm'),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
                     child: const Text('View Details'),
                   ),
               ],
