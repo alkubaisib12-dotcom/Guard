@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'cameras_page.dart';
 import 'sensors_page.dart';
 import 'activity_log_page.dart';
-import 'settings_page.dart';
-import 'profile_page.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
