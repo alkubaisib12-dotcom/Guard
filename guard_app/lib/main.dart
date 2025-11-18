@@ -20,10 +20,10 @@ class GuardApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         brightness: Brightness.dark,
         scaffoldBackgroundColor: const Color(0xFF0A0A0A),
-        cardTheme: CardTheme(
-          color: const Color(0xFF1A1A1A),
+        cardTheme: const CardThemeData(
+          color: Color(0xFF1A1A1A),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.all(Radius.circular(15)),
           ),
         ),
         appBarTheme: const AppBarTheme(
